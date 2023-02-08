@@ -1,0 +1,34 @@
+.footer{
+    display: flex;
+    margin: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+.touch_us{
+    width: 270px;
+    height: 85px;
+    background-color: rgb(220, 220, 220);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 25px;
+    opacity: 50%;
+    font-size: 25px;
+}
+.footer_section{
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    background-color: rgb(220, 220, 220);
+    border-radius: 25px;
+    width: 1000px;
+    height: 85px;
+}
+.f_parts{
+    opacity: 50%;
+    font-size: 20px;
+width: 100%;
+justify-content: space-between;
+}
