@@ -1,0 +1,12 @@
+.body_cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.body_title{
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px;
+
+
+}
