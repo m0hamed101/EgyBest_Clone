@@ -6,7 +6,7 @@ export const Footer = () => {
         <div className='footer'>
             <div className='footer_section'>
                 <ul className='f_parts'>
-                <i class="fa-thin fa-moon"></i><p>|</p>
+                <i className="fa-thin fa-moon"></i><p>|</p>
                 <li><a>مسلسلات</a></li><p>|</p>
                 <li><a>افلام</a></li><p>|</p>
                 <li><a>مصارعه حره</a></li><p>|</p>
@@ -18,8 +18,8 @@ export const Footer = () => {
                 </div>
                 <div className='touch_us'>
                 تابعنا
-                <i class="fa-brands fa-square-facebook"></i>
-                <i class="fa-brands fa-square-twitter"></i>
+                <i className="fa-brands fa-square-facebook"></i>
+                <i className="fa-brands fa-square-twitter"></i>
             </div>
 
 

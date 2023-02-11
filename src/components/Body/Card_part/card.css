@@ -1,15 +1,21 @@
 .card{
-    background-image: url(../../../Assets/images.jpeg);
-    width: 230px;
+    width: 100%;
     height: 280px;
     border-radius: 35px;
     display:flex;
-    align-items: end;
+    align-items: flex-end;
     justify-content: center;
+    background-size: cover;
+}
+
+.card img{
+    height: 100%;
+    width: 100%;
+    z-index: -100;
 }
 .detils{
-    justify-content: space-around;
     display: flex;
+    justify-content: space-around;
     backdrop-filter:blur(5px) ;
     width: 100%;
     height: 50px;
@@ -29,6 +35,12 @@
     border-right-color: wheat;
   border-right-style: solid;
 
+}
+
+.name .title{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .rate{
