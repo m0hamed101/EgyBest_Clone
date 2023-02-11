@@ -2,6 +2,7 @@ import { collection, getDocs } from "firebase/firestore";
 import React, { useEffect, useState } from "react";
 import { firestore } from "../../firebaseConfig";
 import "../Body/body.css";
+import Search from "./search/Search";
 import SliderComponent from "./Swiper/Slider";
 
 export const Body = () => {
@@ -14,6 +15,7 @@ export const Body = () => {
 
   return (
     <div className="body">
+      <Search />
       <div className="body_title">الاكثر مشاهده</div>
       <div className="body_cards">
         <SliderComponent movies ={movies} /> 
