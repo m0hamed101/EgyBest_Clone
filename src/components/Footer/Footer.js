@@ -1,11 +1,12 @@
 import React from "react";
 import "../Footer/Footer.css";
 
+
 export const Footer = (props) => {
   return (
     <div className="footer">
-      <div className={`footer_section ${props.dark ? 'dark' : ''}`}>
-        <ul className="f_parts">
+    <div className={`footer_section ${props.dark ? 'dark' : ''}`}>
+    <ul className="f_parts">
           <i className="fa-thin fa-moon"></i>
           <p>|</p>
           <li>
@@ -26,21 +27,21 @@ export const Footer = (props) => {
           <p>|</p>
           <li>
             <a>الرئيسيه</a>
-          </li>
-          <p>|</p>
-          <li>
+            </li>
+            <p>|</p>
+            <li>
             <a>ايجي بيست</a>
-          </li>
-          <li>
+            </li>
+            <li>
             <a></a>
-          </li>
-        </ul>
-      </div>
-      <div className={`touch_us ${props.dark ? 'darkblue' : ''}`}>
-        تابعنا
-        <i className="fa-brands fa-square-facebook"></i>
-        <i className="fa-brands fa-square-twitter"></i>
-      </div>
+            </li>
+            </ul>
+            </div>
+            <div className={`touch_us ${props.dark ? 'darkblue' : ''}`}>
+              تابعنا
+              <i className="fa-brands fa-square-facebook"></i>
+              <i className="fa-brands fa-square-twitter"></i>
+            </div>
     </div>
   );
 };

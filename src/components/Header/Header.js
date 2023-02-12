@@ -1,16 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../Assets/egybest_logo2.png";
 import accountIcon from "../../Assets/AccountIcon2.png";
 import "../Header/Header.css";
 import CustomizedSwitches from "../buttons/DarkModeBtn";
 
 export const Header = (props) => {
+  const [isActive,setActive]=useState(false)
+
+  function hander(){
+    setActive(!isActive)
+  }
   return (
     <div className={`Header ${props.dark ? 'dark' : ''}`}>
+    <div onClick={hander} className="manu"><i class="fa-solid fa-bars"></i></div>
       <div className="account">
         <img className="accountimg" src={accountIcon} />
       </div>
-      <div className="sections">
+      <div className={""+(isActive ? 'active':'sections' )}>
         <ul>
           <li>
             <a className="hover-underline-animation" href="#">
