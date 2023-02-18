@@ -8,27 +8,27 @@ export const Footer = (props) => {
     <div className={`footer_section ${props.dark ? 'dark' : ''}`}>
     <ul className="f_parts">
           <i className="fa-thin fa-moon"></i>
-          <p>|</p>
+          
           <li>
             <a>مسلسلات</a>
           </li>
-          <p>|</p>
+          
           <li>
             <a>افلام</a>
           </li>
-          <p>|</p>
+          
           <li>
             <a>مصارعه حره</a>
           </li>
-          <p>|</p>
+          
           <li>
             <a>الاكثر مشاهده</a>
           </li>
-          <p>|</p>
+          
           <li>
             <a>الرئيسيه</a>
             </li>
-            <p>|</p>
+            
             <li>
             <a>ايجي بيست</a>
             </li>
