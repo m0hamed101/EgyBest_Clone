@@ -7,7 +7,7 @@ const Search = () => {
     <div className='search'>
       <img src={wallImage} alt="wallpaper image" />
       <div className="input">
-        <input type="text" placeholder='Type movie name' />
+        <input   type="text" placeholder='ابحث عن فيلم او مسلسل او ممثل' />
         <i class="fa fa-search"></i>
       </div>
     </div>
