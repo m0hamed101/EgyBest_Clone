@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import SwiperCore, { Virtual, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Card } from "../Card_part/Card";
@@ -6,13 +6,13 @@ import { Card } from "../Card_part/Card";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import './swiper.css'
 
 // install Virtual module
 SwiperCore.use([Virtual, Navigation, Pagination]);
 
 export default function SliderComponent({ movies }) {
-  const [swiperRef, setSwiperRef] = useState(null);
-  const prependNumber = useRef(1);
+  const  [setSwiperRef] = useState(null);
   // Create array with 20 slides
   const [slides, setSlides] = useState(
     movies.map((movie, index) => {
