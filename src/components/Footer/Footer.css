@@ -1,4 +1,4 @@
-.footer{
+.footer {
     box-sizing: border-box;
     display: flex;
     margin: 20px;
@@ -6,12 +6,13 @@
     align-items: center;
 }
 
-.dark{
+.dark {
     background-color: #121212;
     border-bottom: 1px solid #413e3e;
     color: #fff;
 }
-.touch_us{
+
+.touch_us {
     width: 270px;
     height: 85px;
     background-color: rgb(220, 220, 220);
@@ -24,7 +25,8 @@
     opacity: 50%;
     font-size: 25px;
 }
-.footer_section{
+
+.footer_section {
     justify-content: space-around;
     display: flex;
     align-items: center;
@@ -34,19 +36,39 @@
     height: 85px;
     border: 1px solid #413e3e;
 }
-.f_parts{
+
+.f_parts {
     opacity: 50%;
     font-size: 20px;
-width: 100%;
-justify-content: space-between;
+    width: 100%;
+    justify-content: space-between;
 }
 
-.footer .darkblue{
+.f_parts:hover {
+    opacity: 1;
+
+}
+
+.f_parts a:hover {
+    color: #fff;
+    opacity: 1;
+    background-color: #0075C8;
+    border-radius: 10px;
+}
+
+.touch_us:hover {
+    color: #fff;
+    opacity: 1;
+    background-color: #0075C8;
+    border-radius: 10px;
+}
+
+.footer .darkblue {
     background-color: #0075C8;
 }
 
 @media only screen and (max-width:900px) {
-    .footer{
+    .footer {
         justify-content: center;
         align-items: center;
         width: 100%;
@@ -54,27 +76,31 @@ justify-content: space-between;
         padding: 0;
         text-align: center;
         display: block;
-        
+
     }
-    .footer_section{
+
+    .footer_section {
         margin-top: 15px;
         background-color: #0075C8;
         display: block;
         border: none;
         height: 100%;
         width: 100%;
-        border-radius:25px 25px 0px 0px ;
+        border-radius: 25px 25px 0px 0px;
 
     }
-    .footer_section ul{
+
+    .footer_section ul {
         display: block;
     }
-    .touch_us{
+
+    .touch_us {
         width: 100%;
         background-color: #0075C8;
-        border-radius:0px 0px 25px 25px;
+        border-radius: 0px 0px 25px 25px;
     }
-    .f_parts  li {
+
+    .f_parts li {
         padding-bottom: 20px;
     }
-    }
+}

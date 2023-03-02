@@ -64,7 +64,7 @@ export default function SliderComponent({ movies }) {
       pagination={{
         type: 'fraction',
       }}
-      virtual>
+      >
       {slides.map((slideContent, index) => (
         <SwiperSlide key={index} virtualIndex={index}>
           {slideContent}
