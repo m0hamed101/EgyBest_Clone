@@ -42,15 +42,15 @@ export const Movepage = ({dark}) => {
           </div>
           <div className="tt">
             <h1 className={dark?'blue-bg':''}>النوع</h1>
-            <h2 className={dark?'blue-bg':''}>اكشن-دراما-خيال </h2>
+            <h2 className={dark?'blue-bg':''}>{movie === undefined ? "loding..." : `${movie.type}`} </h2>
           </div>
           <div className="tt">
-            <h1 className={dark?'blue-bg':''}>النقييم</h1>
+            <h1 className={dark?'blue-bg':''}>التقييم</h1>
             <h2 className={dark?'blue-bg':''}>voice 350,730 -- 8.8 </h2>
           </div>
           <div className="tt">
             <h1 className={dark?'blue-bg':''}>المده</h1>
-            <h2 className={dark?'blue-bg':''}>2:30:58 </h2>
+            <h2 className={dark?'blue-bg':''}>{movie === undefined ? "loding..." : `${movie.Runtime}`} </h2>
           </div>
           <div className="tt">
             <h1 className={dark?'blue-bg':''}>الجوده</h1>
