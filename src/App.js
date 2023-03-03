@@ -24,7 +24,7 @@ function App() {
       <Header dark={dark} setDark={setDark} />
       <Routes>
         <Route path='/' element= {<Body movies={movies} dark={dark} />}/>
-        <Route path='/:name' element= {<Movepage />}/>
+        <Route path='/:name' element= {<Movepage dark={dark} />}/>
       </Routes>
       <Footer dark={dark} />
     </div>

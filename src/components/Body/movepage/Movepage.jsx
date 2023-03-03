@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { firestore } from "../../../firebaseConfig";
 import { collection, getDocs } from "firebase/firestore";
 
-export const Movepage = () => {
+export const Movepage = ({dark}) => {
   const [movies, setMovies] = useState([]);
   useEffect(() => {
     getDocs(collection(firestore, "movies")).then((data) => {
@@ -33,36 +33,36 @@ export const Movepage = () => {
           />
         </div>
         <div className="detels">
-          <h3 className="movehaed">
+          <h3 className={dark?'blue-bg movehaed':'movehaed'}>
             {movie === undefined ? "loding..." : `${movie.name}`}
           </h3>
           <div className="tt">
-            <h1>التصنيف</h1>
-            <h2>لا يناسب الاطفال</h2>
+            <h1 className={dark?'blue-bg':''}>التصنيف</h1>
+            <h2 className={dark?'blue-bg':''}>لا يناسب الاطفال</h2>
           </div>
           <div className="tt">
-            <h1>النوع</h1>
-            <h2>اكشن-دراما-خيال </h2>
+            <h1 className={dark?'blue-bg':''}>النوع</h1>
+            <h2 className={dark?'blue-bg':''}>اكشن-دراما-خيال </h2>
           </div>
           <div className="tt">
-            <h1>النقييم</h1>
-            <h2>voice 350,730 -- 8.8 </h2>
+            <h1 className={dark?'blue-bg':''}>النقييم</h1>
+            <h2 className={dark?'blue-bg':''}>voice 350,730 -- 8.8 </h2>
           </div>
           <div className="tt">
-            <h1>المده</h1>
-            <h2>2:30:58 </h2>
+            <h1 className={dark?'blue-bg':''}>المده</h1>
+            <h2 className={dark?'blue-bg':''}>2:30:58 </h2>
           </div>
           <div className="tt">
-            <h1>الجوده</h1>
-            <h2>bluray.1080 </h2>
+            <h1 className={dark?'blue-bg':''}>الجوده</h1>
+            <h2 className={dark?'blue-bg':''}>bluray.1080 </h2>
           </div>
           <div className="tt">
-            <h1>المترجم</h1>
-            <h2> شكرا اسلام الجزاوي</h2>
+            <h1 className={dark?'blue-bg':''}>المترجم</h1>
+            <h2 className={dark?'blue-bg':''}> شكرا اسلام الجزاوي</h2>
           </div>
           <div className="tt">
-            <h1>التقين</h1>
-            <h2>80% </h2>
+            <h1 className={dark?'blue-bg':''}>التقييم</h1>
+            <h2 className={dark?'blue-bg':''}>80% </h2>
           </div>
         </div>
         <div className="photo">
