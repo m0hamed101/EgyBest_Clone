@@ -11,22 +11,22 @@ import './swiper.css'
 // install Virtual module
 SwiperCore.use([Virtual, Navigation, Pagination]);
 
-export default function SliderComponent({ movies }) {
+export default function SliderComponent({ movies, start, end }) {
   const  [setSwiperRef] = useState(null);
-  // Create array with 20 slides
+  // Create array with 10 slides
   const [slides, setSlides] = useState(
-    movies.map((movie, index) => {
+    movies.slice(start, end).map((movie, index) => {
       return <Card movie={movie} key={index} />;
     })
   );
 
   useEffect(() => {
     setSlides(
-      movies.map((movie, index) => {
+      movies.slice(start, end).map((movie, index) => {
         return <Card movie={movie} key={index} />;
       })
     );
-  }, [movies]);
+  }, [movies, start, end]);
 
   return (
     <Swiper onSwiper={setSwiperRef}

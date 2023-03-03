@@ -23,11 +23,6 @@ export const Header = (props) => {
         <ul>
           <li>
             <Link className="hover-underline-animation" to="/">
-              الرئيسيه
-            </Link>
-          </li>
-          <li>
-            <Link className="hover-underline-animation" to="/">
               الاكثر مشاهده
             </Link>
           </li>
@@ -49,6 +44,11 @@ export const Header = (props) => {
           <li>
             <Link className="hover-underline-animation" to="/">
               مسرحيات
+            </Link>
+          </li>
+          <li>
+            <Link className="hover-underline-animation" to="/">
+              الرئيسيه
             </Link>
           </li>
         </ul>
