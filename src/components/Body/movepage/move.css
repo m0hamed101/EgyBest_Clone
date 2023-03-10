@@ -2,15 +2,15 @@ h1 {
   padding: 3px;
   border-radius: 10px;
   margin: 10px;
-}
-h1{
+
   justify-content: center;
   display: flex;
   align-items: center;
   width: 111px;
   background-color: #D5D5D5;
 }
-h2{
+
+h2 {
   border-radius: 10px;
   background-color: #D5D5D5;
   width: 300px;
@@ -20,26 +20,32 @@ h2{
   text-align: center;
   justify-content: center;
 }
+
 .movecontaner {
   padding: 3% 5% 1% 5%;
 }
+
 .video img {
   border-radius: 30px;
   width: 465px;
   height: 490px;
 }
+
 .movedata {
   display: flex;
   justify-content: space-between;
 }
+
 .photo img {
   width: 280px;
   height: 420px;
   border-radius: 25px;
 }
-.photoo{
+
+.photoo {
   display: block;
 }
+
 .movehaed {
   padding: 5px;
   font: 30px b;
@@ -48,22 +54,48 @@ h2{
   border-radius: 10px;
   font-weight: 100;
 }
+
 .tt {
   align-items: center;
   display: flex;
   direction: rtl;
 }
-button{
+
+button {
   color: white;
-  font: 30px bold ;
+  font: 30px bold;
   width: 280px;
   height: 66px;
   border: none;
   border-radius: 15px;
-  background-color:rgb(0,87,255) ;
+  background-color: rgb(0, 87, 255);
   margin-top: 10px;
 }
 
-.blue-bg{
+.blue-bg {
   background-color: #0075C8;
+}
+
+@media only screen and (max-width:900px) {
+  .video img {
+    width: 100%;
+  }
+
+  .photoo {
+    display: none;
+  }
+
+  .movedata {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  h1 {
+    width: 40%;
+  }
+
+  h2 {
+    width: 60%;
+  }
 }
