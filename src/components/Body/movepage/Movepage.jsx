@@ -22,7 +22,6 @@ export const Movepage = ({dark}) => {
       })
     );
   }, [movies, name]);
-  // console.log(movie === undefined, movie)
   return (
     <div className="movecontaner">
       <div className="movedata">
